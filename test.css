@@ -1,0 +1,209 @@
+/****************************
+    Google Fonts
+****************************/
+
+@import "https://fonts.googleapis.com/css?family=Pathway+Gothic+One";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 1em;
+}
+body {
+    font-family: Pathway, Gothic;
+    line-height: 1.45;
+    color: #333;
+}
+p {
+    margin-bottom: 1.3rem;
+    text-align: justify;
+    word-wrap: break-word;
+    line-height: 1.8rem;
+}
+h1 {
+    margin: .5rem 0;
+    font-weight: inherit;
+    font-size: 1.296rem;
+    line-height: 2.4rem;
+    color: #000;
+}
+h2 {
+    font-size: 1.215rem;
+    margin: .5rem 0;
+    font-weight: inherit;
+    line-height: 2.4rem;
+}
+h3 {
+    font-size: 1.138rem;
+    margin: .5rem 0;
+    font-weight: inherit;
+    line-height: 2.4rem;
+}
+aside.side p {
+    font-size: .937rem;
+}
+/****************************
+    Masthead
+****************************/
+
+header.masthead {
+    background-image: url(http://lorempixel.com/600/400/cats/);
+    padding: 8rem 0;
+    background-size: 100%;
+}
+/****************************
+    Navigation Control
+****************************/
+
+nav.mainnav ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+nav.mainnav ul li a {
+    display: block;
+    padding: 1rem;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 700;
+    background: #000;
+    color: #fff;
+    border-bottom: 1px solid #a00;
+
+}
+nav.mainnav ul li a:hover {
+    background: #FF694C;
+}
+main.content {
+    padding: 1rem;
+}
+/****************************
+    Float Image according to size of window
+****************************/
+
+img.left {
+    float: left;
+    margin: .25rem 1rem 0 0;
+}
+img.right {
+    float: right;
+    margin: .25rem 0 0 1rem;
+}
+aside.side {
+    padding: 1rem;
+}
+/****************************
+    Footer
+****************************/
+
+footer.footer {
+    clear: both;
+    padding: 1rem 2rem;
+    color: #fff;
+    background-color: #000;
+}
+img {
+    max-width: 100%;
+    padding: 0 0 1rem;
+}
+/****************************
+    Media Queries for max-60em and min 35em
+****************************/
+
+@media all and (max-width: 60em) and (min-width: 35em) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    h2 {
+        font-size: 1.9rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    aside.side p {
+        font-size: 1rem;
+    }
+    div.wrapper {
+        margin: 0 auto;
+    }
+    nav.mainnav ul {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+    nav.mainnav ul li {
+        display: table-cell;
+        width: 25%;
+        text-align: center;
+    }
+    main.content {
+        width: 63%;
+        float: left;
+        font-size: 1rem;
+    }
+    aside.side {
+        width: 37%;
+        float: right;
+    }
+}
+/****************************
+    min 60em
+****************************/
+
+@media all and (min-width: 60em) {
+    h1 {
+        font-size: 3.998rem;
+    }
+    h2 {
+        font-size: 2.827rem;
+    }
+    h3 {
+        font-size: 1.999rem
+    }
+    aside.side p {
+        font-size: 1.5rem;
+    }
+    h1 {
+        white-space: nowrap;
+    }
+    div.wrapper {
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+    header.masthead {
+        padding: 9rem;
+    }
+    nav.mainnav ul {
+        clear: both;
+        width: 25%;
+        float: left;
+        background-image: url(http://lorempixel.com/800/1000/cats/);
+        height: 1000px;
+    }
+    /****************************
+    To support the browser and make columns
+****************************/
+    
+    main.content {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        width: 50%;
+        float: left;
+        font-size: 1.5rem;
+    }
+    aside.side {
+        width: 25%;
+        float: left;
+        border-left: 1px solid #eee;
+    }
+    img.left {
+        float: none;
+        margin: .25rem 0 0;
+    }
+    img.right {
+        float: none;
+        margin: .25rem 0 0;
+    }
+}
